@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#FAFAFA">
+  <meta name="description" content="Shop saris and online clothing from Vastra.in.">
+  <title>Saris and clothing | Vastra.in</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script><script src="supabase-config.js" defer></script><script src="site.js" defer></script>
+</head>
+<body class="product-page">
+  <header class="site-header"><div class="header-inner">
+    <div class="shop-header-tools"><button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">⋮</button></div><a class="brand" href="index.html" aria-label="Vastra.in home">VASTRA<span class="brand-dot">.</span>IN<small class="brand-tagline">Fashion in Tradition</small></a>
+    <nav class="main-nav" id="main-nav" aria-label="Main navigation"><a href="products.html" aria-current="page">Shop</a><a href="about.html">Our story</a><a href="contact.html">Contact</a></nav>
+    <div class="header-actions"><button class="sign-in-link" type="button" data-open-signin>Sign in</button><button class="wishlist-button" type="button" data-toggle-wishlist aria-pressed="false" aria-label="Show saved products" title="Saved products"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 4.6a5.4 5.4 0 0 0-7.6 0L12 5.8l-1.2-1.2a5.4 5.4 0 0 0-7.6 7.6l1.2 1.2L12 21l7.6-7.6 1.2-1.2a5.4 5.4 0 0 0 0-7.6Z"/></svg></button><button class="cart-button" type="button" data-open-cart aria-label="Open shopping basket" title="Open shopping basket"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2L5 8Z"/><path d="M8 8a4 4 0 0 1 8 0"/></svg></button></div>
+    
+  </div></header>
+  <main>
+    <section class="section product-listing"><div class="container">
+      <div class="sari-sketch"><img src="bride-sari-editorial.jpg" alt="Bride in a dark embroidered sari and veil with traditional jewelry"><span class="floral-accent floral-accent-one" aria-hidden="true">✿</span><span class="floral-accent floral-accent-two" aria-hidden="true">✿</span><span class="floral-accent floral-accent-three" aria-hidden="true">✿</span><span class="portrait-wordmark">VASTRA</span></div>
+      <form class="collection-search" role="search" onsubmit="return false"><label class="sr-only" for="product-search">Search the collection</label><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg><input id="product-search" type="search" placeholder="Search saris and clothing" autocomplete="off"><button type="button" data-clear-search aria-label="Clear search">×</button></form><div class="filter-entry"><span>Refine your selection</span><button class="filter-toggle" type="button" data-toggle-filters aria-expanded="false" aria-controls="shop-filters"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18l-7 8v5l-4 2v-7L3 5Z"/></svg> Filter &amp; sort <span aria-hidden="true">＋</span></button></div>
+      <section class="filter-panel" id="shop-filters" hidden aria-label="Shop filters">
+        <div class="filter-panel-heading"><div><p class="kicker">Customize your view</p><h3>Filter and sort</h3></div><button class="filter-close" type="button" data-toggle-filters aria-expanded="true" aria-controls="shop-filters">Done <span aria-hidden="true">×</span></button></div>
+        <div class="shop-filters" aria-label="Filter and sort products">
+          <label class="shop-control"><span>Price range</span><select id="price-filter"><option value="all">Any price</option><option value="under2500">Under ₹2,500</option><option value="2500to4999">₹2,500–₹4,999</option><option value="5000plus">₹5,000 and above</option></select></label>
+          <label class="shop-control"><span>Fabric type</span><select id="fabric-filter"><option value="all">All fabrics</option><option value="cotton">Cotton</option><option value="silk">Silk</option></select></label>
+          <label class="shop-control"><span>Basic colour</span><select id="color-filter"><option value="all">All colours</option><option value="beige">Beige</option><option value="black">Black</option><option value="blue">Blue</option><option value="green">Green</option><option value="maroon">Maroon</option><option value="red">Red</option><option value="rust">Rust</option><option value="yellow">Yellow</option></select></label>
+          <label class="shop-control"><span>Sort by</span><select id="sort-products"><option value="featured">Featured</option><option value="price-low">Price: low to high</option><option value="price-high">Price: high to low</option><option value="name">Name: A to Z</option></select></label>
+        </div>
+        <div class="product-toolbar" role="group" aria-label="Filter by wear category">
+          <button class="filter-button" type="button" data-filter="all" aria-pressed="true">All products</button>
+          <button class="filter-button" type="button" data-filter="casual" aria-pressed="false">Casual Wear</button>
+          <button class="filter-button" type="button" data-filter="ethnic" aria-pressed="false">Ethnic Wear</button>
+          <button class="filter-button" type="button" data-filter="occasion" aria-pressed="false">Occasion Wear</button>
+        </div>
+        <button class="filter-reset" type="button" id="reset-filters">Clear filters</button>
+      </section>
+      <div class="product-grid">
+        <article class="product-card" data-category="casual" data-price="2490" data-fabric="cotton" data-color="beige">
+          <div class="product-visual" style="--fabric:#E3E3E3"><button class="favorite-toggle" type="button" data-favorite aria-pressed="false" aria-label="Save this product"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 4.6a5.4 5.4 0 0 0-7.6 0L12 5.8l-1.2-1.2a5.4 5.4 0 0 0-7.6 7.6l1.2 1.2L12 21l7.6-7.6 1.2-1.2a5.4 5.4 0 0 0 0-7.6Z"/></svg></button><img src="https://images.pexels.com/photos/14664844/pexels-photo-14664844.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=900" alt="Sari styling in a soft outdoor setting" loading="lazy"></div>
+          <div class="product-info"><div><h3>Gulmohar Printed Sari</h3><p>Lightweight · Everyday edit</p></div><span class="price">₹2,490</span></div>
+          <div class="product-buy"><span class="form-help">Free size</span><div class="buy-actions"><button class="button buy-now" type="button" data-buy-now data-id="gulmohar-sari" data-name="Gulmohar Printed Sari" data-price="2490">Buy</button><button class="icon-cart-button" type="button" data-add-to-cart data-id="gulmohar-sari" data-name="Gulmohar Printed Sari" data-price="2490" aria-label="Add Gulmohar Printed Sari to basket" title="Add to basket"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2L5 8Z"/><path d="M8 8a4 4 0 0 1 8 0"/></svg></button></div></div>
+        </article>
+        <article class="product-card" data-category="occasion" data-price="3250" data-fabric="cotton" data-color="rust">
+          <div class="product-visual" style="--fabric:#EE6F57"><button class="favorite-toggle" type="button" data-favorite aria-pressed="false" aria-label="Save this product"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 4.6a5.4 5.4 0 0 0-7.6 0L12 5.8l-1.2-1.2a5.4 5.4 0 0 0-7.6 7.6l1.2 1.2L12 21l7.6-7.6 1.2-1.2a5.4 5.4 0 0 0 0-7.6Z"/></svg></button><img src="https://images.pexels.com/photos/18964798/pexels-photo-18964798.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=900" alt="Warm rust-toned sari look" loading="lazy"></div>
+          <div class="product-info"><div><h3>Rasa Cotton Sari</h3><p>Warm earth · Occasion edit</p></div><span class="price">₹3,250</span></div>
+          <div class="product-buy"><span class="form-help">Free size</span><div class="buy-actions"><button class="button buy-now" type="button" data-buy-now data-id="rasa-sari" data-name="Rasa Cotton Sari" data-price="3250">Buy</button><button class="icon-cart-button" type="button" data-add-to-cart data-id="rasa-sari" data-name="Rasa Cotton Sari" data-price="3250" aria-label="Add Rasa Cotton Sari to basket" title="Add to basket"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2L5 8Z"/><path d="M8 8a4 4 0 0 1 8 0"/></svg></button></div></div>
+        </article>
+        <article class="product-card" data-category="ethnic" data-price="4200" data-fabric="silk" data-color="blue">
+          <div class="product-visual" style="--fabric:#CB3737"><button class="favorite-toggle" type="button" data-favorite aria-pressed="false" aria-label="Save this product"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 4.6a5.4 5.4 0 0 0-7.6 0L12 5.8l-1.2-1.2a5.4 5.4 0 0 0-7.6 7.6l1.2 1.2L12 21l7.6-7.6 1.2-1.2a5.4 5.4 0 0 0 0-7.6Z"/></svg></button><img src="https://images.pexels.com/photos/20563682/pexels-photo-20563682.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=900" alt="Colorful traditional sari styling" loading="lazy"></div>
+          <div class="product-info"><div><h3>Neel Handloom Sari</h3><p>Deep indigo · Classic edit</p></div><span class="price">₹4,200</span></div>
+          <div class="product-buy"><span class="form-help">Free size</span><div class="buy-actions"><button class="button buy-now" type="button" data-buy-now data-id="neel-sari" data-name="Neel Handloom Sari" data-price="4200">Buy</button><button class="icon-cart-button" type="button" data-add-to-cart data-id="neel-sari" data-name="Neel Handloom Sari" data-price="4200" aria-label="Add Neel Handloom Sari to basket" title="Add to basket"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2L5 8Z"/><path d="M8 8a4 4 0 0 1 8 0"/></svg></button></div></div>
+        </article>
+        <article class="product-card" data-category="casual" data-price="2750" data-fabric="cotton" data-color="yellow">
+          <div class="product-visual" style="--fabric:#E3E3E3"><button class="favorite-toggle" type="button" data-favorite aria-pressed="false" aria-label="Save this product"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 4.6a5.4 5.4 0 0 0-7.6 0L12 5.8l-1.2-1.2a5.4 5.4 0 0 0-7.6 7.6l1.2 1.2L12 21l7.6-7.6 1.2-1.2a5.4 5.4 0 0 0 0-7.6Z"/></svg></button><img src="https://images.pexels.com/photos/14664844/pexels-photo-14664844.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=900" alt="Soft-toned sari look for everyday wear" loading="lazy"></div>
+          <div class="product-info"><div><h3>Marigold Cotton Sari</h3><p>Easy drape · Everyday edit</p></div><span class="price">₹2,750</span></div>
+          <div class="product-buy"><span class="form-help">Free size</span><div class="buy-actions"><button class="button buy-now" type="button" data-buy-now data-id="marigold-sari" data-name="Marigold Cotton Sari" data-price="2750">Buy</button><button class="icon-cart-button" type="button" data-add-to-cart data-id="marigold-sari" data-name="Marigold Cotton Sari" data-price="2750" aria-label="Add Marigold Cotton Sari to basket" title="Add to basket"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2L5 8Z"/><path d="M8 8a4 4 0 0 1 8 0"/></svg></button></div></div>
+        </article>
+        <article class="product-card" data-category="occasion" data-price="5490" data-fabric="silk" data-color="red">
+          <div class="product-visual" style="--fabric:#EE6F57"><button class="favorite-toggle" type="button" data-favorite aria-pressed="false" aria-label="Save this product"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 4.6a5.4 5.4 0 0 0-7.6 0L12 5.8l-1.2-1.2a5.4 5.4 0 0 0-7.6 7.6l1.2 1.2L12 21l7.6-7.6 1.2-1.2a5.4 5.4 0 0 0 0-7.6Z"/></svg></button><img src="https://images.pexels.com/photos/18964798/pexels-photo-18964798.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=900" alt="Rich rust sari styling for an occasion" loading="lazy"></div>
+          <div class="product-info"><div><h3>Zari Evening Sari</h3><p>Warm rust · Celebration edit</p></div><span class="price">₹5,490</span></div>
+          <div class="product-buy"><span class="form-help">Free size</span><div class="buy-actions"><button class="button buy-now" type="button" data-buy-now data-id="zari-evening-sari" data-name="Zari Evening Sari" data-price="5490">Buy</button><button class="icon-cart-button" type="button" data-add-to-cart data-id="zari-evening-sari" data-name="Zari Evening Sari" data-price="5490" aria-label="Add Zari Evening Sari to basket" title="Add to basket"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2L5 8Z"/><path d="M8 8a4 4 0 0 1 8 0"/></svg></button></div></div>
+        </article>
+        <article class="product-card" data-category="occasion" data-price="6250" data-fabric="silk" data-color="maroon">
+          <div class="product-visual" style="--fabric:#E3E3E3"><button class="favorite-toggle" type="button" data-favorite aria-pressed="false" aria-label="Save this product"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 4.6a5.4 5.4 0 0 0-7.6 0L12 5.8l-1.2-1.2a5.4 5.4 0 0 0-7.6 7.6l1.2 1.2L12 21l7.6-7.6 1.2-1.2a5.4 5.4 0 0 0 0-7.6Z"/></svg></button><img src="https://images.pexels.com/photos/13124413/pexels-photo-13124413.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=900" alt="Dark festive sari look with traditional detail" loading="lazy"></div>
+          <div class="product-info"><div><h3>Mehfil Banarasi Sari</h3><p>Rich detail · Celebration edit</p></div><span class="price">₹6,250</span></div>
+          <div class="product-buy"><span class="form-help">Free size</span><div class="buy-actions"><button class="button buy-now" type="button" data-buy-now data-id="mehfil-banarasi-sari" data-name="Mehfil Banarasi Sari" data-price="6250">Buy</button><button class="icon-cart-button" type="button" data-add-to-cart data-id="mehfil-banarasi-sari" data-name="Mehfil Banarasi Sari" data-price="6250" aria-label="Add Mehfil Banarasi Sari to basket" title="Add to basket"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2L5 8Z"/><path d="M8 8a4 4 0 0 1 8 0"/></svg></button></div></div>
+        </article>
+        <article class="product-card" data-category="ethnic" data-price="1890" data-fabric="cotton" data-color="green">
+          <div class="product-visual" style="--fabric:#CB3737"><button class="favorite-toggle" type="button" data-favorite aria-pressed="false" aria-label="Save this product"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 4.6a5.4 5.4 0 0 0-7.6 0L12 5.8l-1.2-1.2a5.4 5.4 0 0 0-7.6 7.6l1.2 1.2L12 21l7.6-7.6 1.2-1.2a5.4 5.4 0 0 0 0-7.6Z"/></svg></button><img src="https://images.pexels.com/photos/20563682/pexels-photo-20563682.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=900" alt="Colorful traditional clothing look" loading="lazy"></div>
+          <div class="product-info"><div><h3>Meher Kurta Set</h3><p>Expressive color · Festive edit</p></div><span class="price">₹1,890</span></div>
+          <div class="product-buy"><span class="form-help">Free size</span><div class="buy-actions"><button class="button buy-now" type="button" data-buy-now data-id="meher-kurta" data-name="Meher Kurta Set" data-price="1890">Buy</button><button class="icon-cart-button" type="button" data-add-to-cart data-id="meher-kurta" data-name="Meher Kurta Set" data-price="1890" aria-label="Add Meher Kurta Set to basket" title="Add to basket"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2L5 8Z"/><path d="M8 8a4 4 0 0 1 8 0"/></svg></button></div></div>
+        </article>
+        <article class="product-card" data-category="occasion" data-price="2650" data-fabric="silk" data-color="black">
+          <div class="product-visual" style="--fabric:#E3E3E3"><button class="favorite-toggle" type="button" data-favorite aria-pressed="false" aria-label="Save this product"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 4.6a5.4 5.4 0 0 0-7.6 0L12 5.8l-1.2-1.2a5.4 5.4 0 0 0-7.6 7.6l1.2 1.2L12 21l7.6-7.6 1.2-1.2a5.4 5.4 0 0 0 0-7.6Z"/></svg></button><img src="https://images.pexels.com/photos/13124413/pexels-photo-13124413.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=900" alt="Black and rust traditional clothing styling" loading="lazy"></div>
+          <div class="product-info"><div><h3>Noor Embroidered Set</h3><p>Classic detail · Occasion edit</p></div><span class="price">₹2,650</span></div>
+          <div class="product-buy"><span class="form-help">Free size</span><div class="buy-actions"><button class="button buy-now" type="button" data-buy-now data-id="noor-set" data-name="Noor Embroidered Set" data-price="2650">Buy</button><button class="icon-cart-button" type="button" data-add-to-cart data-id="noor-set" data-name="Noor Embroidered Set" data-price="2650" aria-label="Add Noor Embroidered Set to basket" title="Add to basket"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2L5 8Z"/><path d="M8 8a4 4 0 0 1 8 0"/></svg></button></div></div>
+        </article>
+      </div>
+    </div></section>
+    <section class="section" style="padding-top:0"><div class="container cta-band"><h2>Need help with an item or order?</h2><a class="button" href="contact.html">Contact us <span aria-hidden="true">→</span></a></div></section>
+  </main>
+  <footer class="site-footer"><div class="container"><div class="footer-main"><div><a class="footer-brand" href="index.html">VASTRA.IN</a><p>Saris and online clothing, selected for your style.</p><div class="footer-social" aria-label="Connect with Vastra.in"><a href="https://www.instagram.com/vastra.in/" target="_blank" rel="noopener noreferrer" aria-label="Instagram (placeholder link)" title="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle class="social-dot" cx="17.5" cy="6.5" r="1"/></svg></a><a href="https://www.facebook.com/vastra.in" target="_blank" rel="noopener noreferrer" aria-label="Facebook (placeholder link)" title="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 21v-8h3l.5-4H14V7c0-1.2.4-2 2-2h1.7V1.4C17 1.2 15.8 1 14.2 1 10.8 1 9 3 9 6.7V9H6v4h3v8h5Z"/></svg></a><a href="https://www.whatsapp.com/" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp (placeholder link)" title="WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.8a8.4 8.4 0 0 1-12.4 7.4L3 20l.8-4.9a8.4 8.4 0 1 1 16.7-3.3Z"/><path d="M8.7 7.8c.2-.4.5-.4.8-.4h.4c.2 0 .4.1.5.4l.8 1.8c.1.2.1.4-.1.6l-.6.7c-.2.2-.2.4-.1.6.6 1 1.4 1.8 2.4 2.4.2.1.4.1.6-.1l.8-1c.2-.2.4-.3.6-.2l1.7.8c.3.1.4.3.4.5 0 .5-.2 1-.6 1.3-.5.5-1.3.7-2 .5-1.2-.3-2.6-1.1-3.9-2.4s-2-2.6-2.3-3.8c-.2-.7.1-1.4.6-1.7z"/></svg></a><a class="footer-email" href="mailto:hello@example.com" aria-label="Email hello@example.com (placeholder)"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2"/><path d="m3.5 6 8.5 7 8.5-7"/></svg><span>hello@example.com</span></a></div></div><div class="footer-links"><strong>Shop</strong><a href="products.html">Saris and clothing</a></div><div class="footer-links"><strong>Vastra.in</strong><a href="about.html">Our story</a><a href="contact.html">Contact</a></div><div class="footer-links"><strong>Help &amp; policies</strong><a href="help.html#privacy-policy">Privacy Policy</a><a href="help.html#return-policy">Return Policy</a><a href="help.html#terms">Terms &amp; Conditions</a><a href="help.html#track-order">Track your order</a><a href="help.html#faq">FAQ</a></div></div>
+      <div class="footer-bottom"><span>© 2026 Vastra.in</span><span>Fashion is all about clothing.</span></div></div></footer>
+  <dialog class="signin-dialog" id="signin-dialog" aria-labelledby="signin-title"><div class="cart-header"><h2 id="signin-title">Welcome to Vastra.in</h2><button class="cart-close" type="button" data-close-signin aria-label="Close sign in">×</button></div><form class="signin-form" data-demo-form data-success="Thanks. Account sign-in is not connected in this preview yet."><label>Email address<input type="email" required placeholder="you@gmail.com"></label><label>Password<input type="password" required placeholder="Enter your password"></label><button class="button" type="submit">Sign in</button><p class="form-help form-message" aria-live="polite">Sign-in is a preview feature and is not connected to an account service yet.</p></form></dialog><dialog class="cart-dialog" id="cart-dialog" aria-labelledby="cart-title">
+    <div class="cart-header"><h2 id="cart-title">Your basket</h2><button class="cart-close" type="button" data-close-cart aria-label="Close shopping bag">×</button></div>
+    <div class="cart-items" id="cart-items"></div>
+    <div class="cart-summary"><div class="cart-subtotal"><span>Subtotal</span><span id="cart-subtotal">₹0</span></div><button class="button" id="checkout-button" type="button">Continue to checkout</button><p class="cart-note" id="cart-note" aria-live="polite">Place an order request and we’ll contact you to confirm it. Payment is not collected on this site.</p></div>
+  </dialog>
+  <dialog class="checkout-dialog" id="checkout-dialog" aria-labelledby="checkout-title">
+    <div class="cart-header"><h2 id="checkout-title">Delivery details</h2><button class="cart-close" type="button" data-close-checkout aria-label="Close checkout">×</button></div>
+    <p class="checkout-intro">Enter your contact and delivery details to place your order request. We’ll confirm the order with you before payment.</p>
+    <form id="order-form" class="checkout-form">
+      <label>Full name<input name="customer_name" autocomplete="name" required minlength="2" maxlength="120"></label>
+      <label>Email address<input name="email" type="email" autocomplete="email" required maxlength="254"></label>
+      <label>Phone number<input name="phone" type="tel" autocomplete="tel" required minlength="7" maxlength="32"></label>
+      <label>Delivery address<input name="address" autocomplete="street-address" required minlength="5" maxlength="300"></label>
+      <div class="checkout-form-row"><label>City<input name="city" autocomplete="address-level2" required minlength="2" maxlength="120"></label><label>Postal code<input name="postal_code" autocomplete="postal-code" required minlength="3" maxlength="16"></label></div>
+      <p class="checkout-status" id="checkout-status" aria-live="polite"></p>
+      <div class="checkout-actions"><button class="button outline" type="button" data-back-to-cart>Back to basket</button><button class="button" type="submit" id="place-order-button">Place order</button></div>
+    </form>
+    <div id="checkout-success" class="checkout-success" hidden><h3>Order request received</h3><p id="checkout-success-message"></p><button class="button" type="button" data-close-checkout>Done</button></div>
+  </dialog>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

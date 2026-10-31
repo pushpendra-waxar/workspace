@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#FAFAFA">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Order Admin | Vastra.in</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
+  <script src="supabase-config.js" defer></script>
+  <script src="admin.js" defer></script>
+</head>
+<body class="admin-page">
+  <main class="admin-shell">
+    <header class="admin-header">
+      <a class="brand" href="index.html">VASTRA<span class="brand-dot">.</span>IN</a>
+      <a class="admin-store-link" href="products.html">View store</a>
+    </header>
+
+    <section class="admin-login-card" id="admin-login-panel" aria-labelledby="admin-login-title">
+      <p class="kicker">Private access</p>
+      <h1 id="admin-login-title">Store admin</h1>
+      <p class="admin-intro">Sign in with an administrator account to view customer orders.</p>
+      <form id="admin-login-form" class="admin-form">
+        <label>Email address<input name="email" type="email" autocomplete="username" required></label>
+        <label>Password<input name="password" type="password" autocomplete="current-password" required></label>
+        <button class="button" id="admin-login-button" type="submit">Sign in</button>
+        <p class="admin-message" id="admin-login-message" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section class="admin-orders-panel" id="admin-orders-panel" hidden aria-labelledby="admin-orders-title">
+      <div class="admin-orders-heading">
+        <div><p class="kicker">Order management</p><h1 id="admin-orders-title">Customer orders</h1></div>
+        <div class="admin-actions"><button class="button outline" id="refresh-orders" type="button">Refresh</button><button class="button" id="admin-signout" type="button">Sign out</button></div>
+      </div>
+      <p class="admin-message" id="orders-message" role="status" aria-live="polite"></p>
+      <div class="orders-list" id="orders-list"></div>
+    </section>
+  </main>
+</body>
+</html>
